@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>My Portfolio</title>
+<title>Ashish Vanjare | DTP Specialist</title>
 
 <style>
 body {
   font-family: 'Segoe UI', sans-serif;
   margin: 0;
   background: #f4f6f8;
+  color: #333;
 }
 
+/* HERO */
 .hero {
   background: linear-gradient(135deg, #1f1f1f, #3a3a3a);
   color: white;
@@ -18,7 +20,8 @@ body {
 }
 
 .hero h1 {
-  font-size: 40px;
+  font-size: 42px;
+  margin-bottom: 10px;
 }
 
 .hero h2 {
@@ -28,34 +31,96 @@ body {
 
 .tagline {
   margin-top: 10px;
+  font-size: 15px;
 }
 
 .btn {
-  padding: 10px 20px;
+  padding: 12px 24px;
   background: #ff4c60;
   color: white;
   text-decoration: none;
-  border-radius: 5px;
-  margin: 5px;
+  border-radius: 6px;
+  margin: 8px;
   display: inline-block;
+  transition: 0.3s;
 }
 
+.btn:hover {
+  background: #e63b50;
+}
+
+/* SECTIONS */
 section {
-  padding: 40px;
-  max-width: 900px;
+  padding: 50px 20px;
+  max-width: 1000px;
   margin: auto;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+/* PROJECTS */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
 }
 
 .project {
   background: white;
-  padding: 20px;
-  border-radius: 10px;
-  margin-bottom: 20px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: 0.3s;
 }
 
-img {
+.project:hover {
+  transform: translateY(-5px);
+}
+
+.project img {
   width: 100%;
-  border-radius: 10px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.project-content {
+  padding: 15px;
+}
+
+.project h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.project p {
+  font-size: 14px;
+  color: #666;
+  margin-top: 8px;
+}
+
+/* SKILLS */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill {
+  background: #fff;
+  padding: 10px 15px;
+  border-radius: 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* CONTACT */
+.contact {
+  text-align: center;
+}
+
+.contact p {
+  margin: 5px 0;
 }
 </style>
 
@@ -65,10 +130,10 @@ img {
 
 <!-- HERO -->
 <div class="hero">
-  <h1>Your Name</h1>
+  <h1>Ashish Vanjare</h1>
   <h2>DTP Specialist | Graphic Designer | Typesetter</h2>
   <p class="tagline">
-    Brochure Design • Flyers • Posters • Word Formatting • Document Recreation
+    Multilingual Layout • Corporate Documents • Print-Ready Design • Document Recreation
   </p>
   <p>Available for Immediate Joining</p>
 
@@ -80,25 +145,64 @@ img {
 <section>
 <h2>About Me</h2>
 <p>
-I am a DTP Specialist with experience in corporate documents, brochures, and multilingual layouts.
-I focus on clean typography, accuracy, and print-ready designs.
+I am a DTP Specialist with 10+ years of experience in creating high-quality, print-ready layouts for corporate documents, brochures, and large-scale publications. I specialize in structured design, typography precision, and multilingual publishing.
+
+I have worked on global projects across 50+ languages, ensuring layout consistency, localization accuracy, and production standards. My expertise includes Adobe InDesign, Illustrator, Photoshop, and advanced document formatting in Word and PowerPoint.
+
+I am detail-oriented, deadline-driven, and focused on delivering clean, error-free, professional output.
 </p>
 </section>
 
 <!-- PROJECTS -->
 <section id="projects">
-<h2>Projects</h2>
+<h2>Featured Projects</h2>
 
+<div class="projects-grid">
+
+<!-- SHELL BROCHURE -->
 <div class="project">
-<h3>BMW Technical Booklet</h3>
-<p>Multi-page technical layout with structured formatting.</p>
-<img src="images/bmw1.jpg">
+<img src="images/shell1.jpg">
+<div class="project-content">
+<h3>Shell GTL SaraCare Brochure</h3>
+<p>
+Corporate brochure design with technical data, infographics, and clean structured layout. Multilingual formatting (Chinese).
+</p>
+</div>
 </div>
 
+<!-- COMPLIANCE MANUAL -->
 <div class="project">
-<h3>Shell Brochure</h3>
-<p>Corporate brochure with technical data and clean layout.</p>
-<img src="images/shell1.jpg">
+<img src="images/compliance.jpg">
+<div class="project-content">
+<h3>Shell Compliance Manual</h3>
+<p>
+Multi-page corporate document with table of contents, structured hierarchy, and professional formatting (French).
+</p>
+</div>
+</div>
+
+<!-- TORONTO EVENT GUIDE -->
+<div class="project">
+<img src="images/toronto.jpg">
+<div class="project-content">
+<h3>Smiling Stars Event Guide 2025</h3>
+<p>
+Magazine-style event guide with modern layout, image integration, and branding consistency.
+</p>
+</div>
+</div>
+
+<!-- MULTILINGUAL DOCUMENT -->
+<div class="project">
+<img src="images/urdu.jpg">
+<div class="project-content">
+<h3>Multilingual Travel Document</h3>
+<p>
+Right-to-left (RTL) layout design with Urdu typesetting and structured formatting for readability.
+</p>
+</div>
+</div>
+
 </div>
 
 </section>
@@ -106,20 +210,26 @@ I focus on clean typography, accuracy, and print-ready designs.
 <!-- SKILLS -->
 <section>
 <h2>Skills</h2>
-<ul>
-<li>Adobe InDesign</li>
-<li>Illustrator</li>
-<li>Photoshop</li>
-<li>CorelDRAW</li>
-<li>MS Word Formatting</li>
-</ul>
+
+<div class="skills">
+<div class="skill">Adobe InDesign</div>
+<div class="skill">Adobe Illustrator</div>
+<div class="skill">Adobe Photoshop</div>
+<div class="skill">Microsoft Word</div>
+<div class="skill">Microsoft PowerPoint</div>
+<div class="skill">Multilingual DTP</div>
+<div class="skill">RTL Formatting</div>
+<div class="skill">Typography</div>
+<div class="skill">Print Production</div>
+</div>
+
 </section>
 
 <!-- CONTACT -->
-<section id="contact">
+<section id="contact" class="contact">
 <h2>Contact</h2>
-<p>Email: your@email.com</p>
-<p>Phone: 9999999999</p>
+<p>Email: vanzy214@gmail.com</p>
+<p>Phone: +91 9970760191</p>
 </section>
 
 </body>
